@@ -56,7 +56,7 @@ npm start
 
 
 🔌 API Endpoints Method, Endpoint, Description, Auth Required POST, /api/auth/register, Register a new user, No POST, /api/auth/login, Login & get access token, No GET, /api/notes, Get all notes for the user, Yes POST, /api/notes, Create a new note, Yes DELETE, /api/notes/:id, Delete a specific note, Yes
-
+```text
 📂 Project Structure
 mi-app-notas/
 ├── config/
@@ -75,4 +75,6 @@ mi-app-notas/
 ├── .env                    # Environment variables (do not share this!)
 ├── server.js               # Main entry point for the Backend
 └── README.md               # Documentation
+
+```
 📝 License This project is open-source. Feel free to use it and modify it as you wish
