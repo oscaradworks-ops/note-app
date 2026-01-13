@@ -52,44 +52,48 @@ Follow these steps to get the project running locally:
 
 1. Clone the repository
 Bash
-
+```
 git clone https://github.com/your-username/notes-app-mern.git
 cd notes-app-mern
+```
 2. Backend Configuration
 Navigate to the root directory (where server.js is located).
 
 Install dependencies:
 
 Bash
-
+```
 npm install
+```
 Create a .env file in the root folder and add your credentials:
 
 Code snippet
-
+```
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=yourSecretKey
 Start the server:
-
+```
 Bash
-
+```
 npm run dev
+```
 3. Frontend Configuration
 Open a new terminal window.
 
 Navigate to the frontend directory:
 
 Bash
-
+```
 cd client
 npm install
 Start the React development server:
+```
 
 Bash
-
+```
 npm start
-
+```
 ---------------------------------------------------------------
 ```text
 
