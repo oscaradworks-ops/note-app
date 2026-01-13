@@ -1,5 +1,4 @@
-![image alt] (https://github.com/oscaradworks-ops/note-app/blob/d212335ea73a3a170477973f7a0cffbb427f30a3/client/public/images/note%20taking%20app%20hero.png)
-
+![Image Alt]([image_url](https://github.com/oscaradworks-ops/note-app/blob/d212335ea73a3a170477973f7a0cffbb427f30a3/client/public/images/note%20taking%20app%20hero.png))
 
 📝 NotesApp - Fullstack MERN Application
 A complete web application for managing personal notes, built using the MERN stack (MongoDB, Express, React, Node.js). This app features secure user authentication, password encryption, and a private dashboard for users to manage their data.
