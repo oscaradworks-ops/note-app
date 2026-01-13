@@ -1,4 +1,4 @@
-📝 NotesApp - Fullstack MERN Application
+  📝 NotesApp - Fullstack MERN Application
 A complete web application for managing personal notes, built using the MERN stack (MongoDB, Express, React, Node.js). This app features secure user authentication, password encryption, and a private dashboard for users to manage their data.
 ------------------------------------------------------------------
 
