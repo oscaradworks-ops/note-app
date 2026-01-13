@@ -9,6 +9,8 @@ A complete web application for managing personal notes, built using the MERN sta
 ![Image Alt](https://github.com/oscaradworks-ops/note-app/blob/ee5e11995df144cd019b08e95f1aaae7c4e0d172/client/public/images/Screenshot%202026-01-13%20010743.png)
 ![Image Alt](https://github.com/oscaradworks-ops/note-app/blob/ee5e11995df144cd019b08e95f1aaae7c4e0d172/client/public/images/Screenshot%202026-01-13%20021203.png)
 
+
+
 🚀 Key Features
 User Authentication: Secure Sign-up and Login functionality.
 
@@ -49,7 +51,7 @@ Follow these steps to get the project running locally:
 1. Clone the repository
 Bash
 
-git clone [https://github.com/oscaradworks-ops/note-app.git]
+git clone https://github.com/your-username/notes-app-mern.git
 cd notes-app-mern
 2. Backend Configuration
 Navigate to the root directory (where server.js is located).
@@ -90,7 +92,6 @@ npm start
 ```text
 
 
-```
 🔌 API Endpoints
 Method,  Endpoint,              Description,                 Auth Required
 POST,    /api/auth/register,    Register a new user,             No
@@ -98,7 +99,7 @@ POST,    /api/auth/login,       Login & get access token,        No
 GET,     /api/notes,            Get all notes for the user,      Yes
 POST,    /api/notes,            Create a new note,               Yes
 DELETE,  /api/notes/:id,        Delete a specific note,          Yes
-
+```
 -----------------------------------------------------------------
 
 ## 📂 Project Structure
@@ -125,3 +126,4 @@ mi-app-notas/
 
 📝 License
 This project is open-source. Feel free to use it and modify it as you wish
+
