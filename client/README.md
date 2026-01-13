@@ -48,7 +48,7 @@ Follow these steps to get the project running locally:
 1. Clone the repository
 Bash
 
-git clone https://github.com/your-username/notes-app-mern.git
+git clone [https://github.com/oscaradworks-ops/note-app.git]
 cd notes-app-mern
 2. Backend Configuration
 Navigate to the root directory (where server.js is located).
