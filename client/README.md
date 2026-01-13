@@ -4,8 +4,10 @@
 A complete web application for managing personal notes, built using the MERN stack (MongoDB, Express, React, Node.js). This app features secure user authentication, password encryption, and a private dashboard for users to manage their data.
 ------------------------------------------------------------------
 
-![alt text](image.png)
-
+![Image Alt](https://github.com/oscaradworks-ops/note-app/blob/ee5e11995df144cd019b08e95f1aaae7c4e0d172/client/public/images/Screenshot%202026-01-13%20000258.png)
+![Image Alt](https://github.com/oscaradworks-ops/note-app/blob/ee5e11995df144cd019b08e95f1aaae7c4e0d172/client/public/images/Screenshot%202026-01-13%20010732.png)
+![Image Alt](https://github.com/oscaradworks-ops/note-app/blob/ee5e11995df144cd019b08e95f1aaae7c4e0d172/client/public/images/Screenshot%202026-01-13%20010743.png)
+![Image Alt](https://github.com/oscaradworks-ops/note-app/blob/ee5e11995df144cd019b08e95f1aaae7c4e0d172/client/public/images/Screenshot%202026-01-13%20021203.png)
 
 🚀 Key Features
 User Authentication: Secure Sign-up and Login functionality.
