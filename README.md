@@ -73,7 +73,7 @@ Copy your connection string
 
 Example:
 
-mongodb+srv://username:password@cluster.mongodb.net/yourDatabaseName
+mongodb+srv://username:"passwordHere"@cluster.mongodb.net/"yourDatabaseNameHere"
 Option B: Local MongoDB Installation
 
 Install MongoDB locally
