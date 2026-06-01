@@ -15,15 +15,16 @@ router.get('/', auth, async (req, res) => {
 
 // 2. CREAR UNA NOTA
 router.post('/', auth, async (req, res) => {
-  const { title, content, color, todos } = req.body;
+  const { title, content, color, todos, location } = req.body;
 
   try {
     const nuevaNota = new Note({
       title,
-      content,
-      color: color || '#fff4b3', 
+      content: content || '',
+      color: color || '#fff4b3',
       todos: todos || [],
-      user: req.user.id // Importante: viene del middleware auth
+      location: location || '',
+      user: req.user.id
     });
 
     const note = await nuevaNota.save();
@@ -56,27 +57,26 @@ router.delete('/:id', auth, async (req, res) => {
 // 4. ACTUALIZAR UNA NOTA (Línea 70 aprox)
 router.put('/:id', auth, async (req, res) => {
   // 🚩 LA CORRECCIÓN: Asegúrate de incluir 'todos' aquí
-  const { title, content, color, todos } = req.body; 
+  const { title, content, color, todos, location } = req.body;
 
   try {
     let note = await Note.findById(req.params.id);
     if (!note) return res.status(404).json({ msg: 'Nota no encontrada' });
 
-    // Verificar dueño
     if (note.user.toString() !== req.user.id) {
       return res.status(401).json({ msg: 'No autorizado' });
     }
 
-    // Actualizar los campos incluyendo 'todos'
     note = await Note.findByIdAndUpdate(
       req.params.id,
-      { 
-        $set: { 
-          title, 
-          content, 
-          color, 
-          todos: todos || [] // 👈 Si 'todos' no viene, enviamos un array vacío
-        } 
+      {
+        $set: {
+          title,
+          content: content || '',
+          color,
+          todos: todos || [],
+          location: location || '',
+        }
       },
       { new: true }
     );

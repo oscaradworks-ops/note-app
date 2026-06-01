@@ -14,7 +14,7 @@ const NoteSchema = new mongoose.Schema({
   },
   content: {
     type: String,
-    required: [true, 'The note content cannot be empty']
+    default: ''
   },
   // Arreglo de objetos para los Checkboxes
   todos: [
@@ -30,6 +30,10 @@ const NoteSchema = new mongoose.Schema({
   tag: {
     type: String,
     default: 'General'
+  },
+  location: {
+    type: String,
+    default: ''
   },
   date: {
     type: Date,

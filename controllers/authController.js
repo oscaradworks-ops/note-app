@@ -21,7 +21,12 @@ exports.register = async (req, res) => {
     // 4. Guardar en la base de datos (Ahora se guarda encriptada)
     await user.save();
 
-    res.json({ msg: "User registered successfully with encrypted password" });
+    // 5. Devolver token + usuario (misma forma que login)
+    const payload = { user: { id: user._id } };
+    jwt.sign(payload, 'palabraSecreta', { expiresIn: '1d' }, (err, token) => {
+      if (err) throw err;
+      res.json({ token, user: { name: user.name, id: user._id } });
+    });
 
   } catch (error) {
     console.error(error);
